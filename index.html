@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <title>My App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <!-- handlebars templates -->
+  <script id="app.component" type="text/x-handlebars-template">
+  <div>
+    <h3>App Cmp</h3>
+    <div class="js-cont"></div>
+  </div>
+  </script>
+
+  <script id="task-management/task-management.component" type="text/x-handlebars-template">
+  <div>
+    <h6>Todos</h6>
+    <ul class="js-todos-list"></ul>
+    <button class="js-create-btn">Create</button>
+  </div>
+  </script>
+
+</head>
+<body>
+<div class="js-app">Loading...</div>
+
+<!-- vendor libs -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/lodash.js"></script>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/handlebars-v4.0.11.js"></script>
+<script src="js/plugins.js"></script>
+<!-- my libs -->
+<script src="js/lib/templates-loader.js"></script>
+<script src="js/lib/extend.js"></script>
+<script src="js/lib/eventable.js"></script>
+<script src="js/lib/base.component.js"></script>
+<!-- app src -->
+<script src="js/app/task-management/todos.service.js"></script>
+<script src="js/app/task-management/task-management.component.js"></script>
+<script src="js/app/app.component.js"></script>
+<!-- bootstrap App -->
+<script src="js/main.js"></script>
+</body>
+</html>
